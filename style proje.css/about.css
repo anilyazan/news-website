@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.container{
+    background: url(denizyıldızı.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .src{
+    right: 0px;
+}
+.container .logo{
+    display: inline-block;
+    margin-left:500px;
+    margin-top: 150px;
+    user-select: none;
+}
+.container .logo b{
+    text-decoration: none;
+  font-size: 60px;
+  font-family: sans-serif;
+  color: rgb(245, 138, 16);
+}
+.container .center{
+    color: rgb(0, 0, 5);
+}

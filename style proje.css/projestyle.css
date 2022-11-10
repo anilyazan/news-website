@@ -1,0 +1,159 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: url(bt.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+.container > .navbar {
+  width: 100%;
+  height: 80px;
+  background: #ad54e4;
+  z-index: 1;
+  user-select: none;
+}
+.container .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+.dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul .dropdown {
+  width: 100%;
+  background: fixed;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover {
+  background: fixed;
+}
+ul li :hover ul.dropdown {
+  display: block;
+}
+
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+  user-select: none;
+}
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: rgb(122, 228, 228);
+}
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+.navbar ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 13px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: #ef8441;
+  border-radius: 2px;
+}
+
+.container .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.center h1 {
+  color: rgb(53, 26, 26);
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+.center h2 {
+  color: azure;
+  font-size: 50px;
+  font-weight: bold;
+  width: 800px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.center .buttons {
+  margin: 35px 280px;
+}
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #163b97;
+  background: rgb(230, 152, 62);
+  border: solid 1px blue;
+  cursor: pointer;
+  outline: none;
+  border-radius: 30px;
+}
+
+.buttons button:hover {
+  background: rgb(241, 188, 188);
+}
+
+.slider {
+  margin-top: 100px;
+  overflow: hidden;
+  display: flex;
+  width: 220px !important;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 220px !important;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+}
+
+.slider img {
+  height: 150px;
+}
+
+.carousel-item {
+  position: absolute;
+  left: 500px;
+}
+
+.active{
+    left:0;
+}

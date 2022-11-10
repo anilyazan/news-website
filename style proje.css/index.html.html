@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<html>
+    <head>
+        <title> Frontend Devoloper Project </title>
+        <link rel='stylesheet' href="projestyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div class ="container">
+            <div class="navbar">
+              <div class="logo">
+                <a href="#" >ANIL YAZAN</a>                   
+            </div>
+            <ul>
+    <li> <a href="#" class="active"> Home  </a></li>
+        <li> <a href="file:///C:/Users/anily/OneDrive/Masa%C3%BCst%C3%BC/html/style%20proje.css/about.html#"> About</a></li>
+        <li> <a href="https://preview.colorlib.com/theme/meranda/categories.html"> Services</a></li>
+        <li> <a href="https://preview.colorlib.com/theme/meranda/index.html"> Products</a></li>
+        <li> <a href="file:///C:/Users/anily/OneDrive/Masa%C3%BCst%C3%BC/html/style%20proje.css/contact.html"> Contact</a></li>
+<li> <a href="#"><i class="bi bi-search"></i></a></li>
+<li> <a href="#"><i class="bi bi-bar-chart-fill"></i></a>
+  <li>
+    <div class="dropdown">
+      <select name="menu">
+        <option value=""entertainment>entertainment</option>
+        <option> general</option>
+        <option> health</option>
+        <option> science</option>
+        <option> sports</option>
+        <option> technology</option>
+    
+      </select>
+     
+    </div>
+
+  </li>
+</li>
+
+   
+             </ul>
+          </div>
+
+            <div section class="slider">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner" id="inner-container">
+                    <div class="carousel-item active">
+                      <img src="swim.jpg" class="d-block w-100" alt="swim">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="çinroketi.webp" class="d-block w-100" alt="çin roketi">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="laboratuvar.png" class="d-block w-100" alt="labaratuvar">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" id="prev-button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" id="next-button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+      
+                </div>
+          </div>
+
+            <div class="center">
+                <h1> ANIL NEWS</h1>
+                <H2>  WELCOME</H2>
+                <div class="buttons">
+                    <button> More News</button>
+                    <button> Subscribe!</button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    
+    
+    </ul>
+<ul>
+    
+</ul>
+
+    </body>
+
+    <footer>
+      <script>
+
+        document.addEventListener('DOMContentLoaded',()=>{
+          const nextButton = document.getElementById('next-button')
+          const prevButton = document.getElementById('prev-button')
+
+          nextButton.addEventListener('click',()=>{
+            let nextActive = 0;
+            const innerContainer = document.getElementById('inner-container')
+            for (let index = 0; index <innerContainer.children.length; index++) {
+              const element = innerContainer.children.item(index);
+              if(element.classList.contains('active') )
+              {element.classList.remove('active')
+              nextActive = (index +1) %  innerContainer.children.length}
+            }
+            innerContainer.children.item(nextActive).classList.add('active')
+          })
+
+          prevButton.addEventListener('click', ()=>{
+            let nextActive = 0;
+            const innerContainer = document.getElementById('inner-container')
+            for (let index = 0; index <innerContainer.children.length; index++) {
+              const element = innerContainer.children.item(index);
+              if(element.classList.contains('active') )
+              {element.classList.remove('active')
+              if(index - 1 < 0){
+                nextActive = innerContainer.children.length-1
+              }
+              else{
+                nextActive = (index-1) %  innerContainer.children.length}
+              }
+            }
+            innerContainer.children.item(nextActive).classList.add('active')
+          })
+        })
+      </script> 
+    </footer>
+</html>
